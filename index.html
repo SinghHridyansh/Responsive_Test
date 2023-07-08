@@ -1,0 +1,145 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SnabbTech</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="nav">
+      <img
+        src="https://snabbtech.com/wp-content/uploads/2023/05/logo-web-white-3.png"
+        alt="logo"
+      />
+      <div class="interact">
+        <ul>
+          <li><a href="">Home</a></li>
+          <li><a href=""></a>Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <main class="main">
+      <div class="hero">
+        <h1>
+          Redefining Web & Mobile <br />
+          Experience
+        </h1>
+        <p>We design, develop and modernise software applications</p>
+        <button class="contact-button">CONTACT US</button>
+      </div>
+      
+    </main>
+    <div class="card-div">
+        <div class="card">
+            <div class="circle"></div>
+            <span>BRAND IDENTITY</span>
+            <p>We help companies by analysing their business and provide them cost effective ssolutions.</p>
+        </div>
+        <div class="card">
+            <div class="circle"></div>
+            <span>BRAND IDENTITY</span>
+            <p>We help companies by analysing their business and provide them cost effective ssolutions.</p>
+        </div>
+        <div class="card">
+            <div class="circle"></div>
+            <span>BRAND IDENTITY</span>
+            <p>We help companies by analysing their business and provide them cost effective ssolutions.</p>
+        </div>
+    </div>
+    <div class="custom-development">
+      <div class="custom-L">
+        <h2>Custom Development</h2>
+        <p>
+          With our extensive experience and innovative ideas within various
+          technology stacks, We develop custom solutions for our client.
+        </p>
+        <ul>
+          <li><i class="fa-solid fa-check"></i> Requirement Gathering</li>
+          <li><i class="fa-solid fa-check"></i> Design and Planning</li>
+          <li><i class="fa-solid fa-check"></i> Development</li>
+          <li>
+            <i class="fa-solid fa-check"></i> Testing and Quality Assurance
+          </li>
+          <li><i class="fa-solid fa-check"></i> Deployment</li>
+          <li><i class="fa-solid fa-check"></i> Maintenance and Support</li>
+        </ul>
+      </div>
+      <div class="custom-R">
+        <img
+          src="https://snabbtech.com/wp-content/uploads/2021/11/Rectangle-604-2-1-480x613.jpg"
+          alt=""
+        />
+      </div>
+    </div>
+    <div class="project">
+      <div class="title">
+        <h1>Have a project in mind? <br />Let's get to work.</h1>
+      </div>
+      <div class="project-button">
+        <button class="contact-button">CONTACT US</button>
+      </div>
+    </div>
+    <div class="insight">
+      <h1>CEO INSIGHT</h1>
+      <div class="text">
+        <div class="para">
+          <p>
+            We have earned the trust and respect of clients for one simple
+            reason—we have great people. They are experts in their fields. They
+            bring a strong service ethos to everything they do. We bring
+            passion, pride and experience together. <br />
+            We have only one objective: to ensure our clients mission objectives
+            are achieved with the highest level of capability and assurance, and
+            at the lowest possible cost.
+          </p>
+        </div>
+        <div class="deets">
+          <div class="deetsL">
+            <div class="deets-inside">
+              <img
+                src="https://snabbtech.com/wp-content/uploads/2023/05/ashish-e1683896864727.jpg"
+                alt=""
+              />
+              <div class="name">
+                <p>Ashish Garg</p>
+                <h5>CEO</h5>
+              </div>
+            </div>
+          </div>
+          <img
+            src="https://snabbtech.com/wp-content/uploads/2023/05/logo-web-Color-1-350x98.png"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+    <footer>
+      <p>@ 2023 Snabbtech. Proudly powered by Snabbtech</p>
+      <i class="fa-brands fa-linkedin"></i>
+    </footer>
+    <script
+      src="https://kit.fontawesome.com/a3e7a6db33.js"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      function animateOnScroll() {
+      const animateElements = document.querySelectorAll('.nav');
+      var referenceElement= document.querySelector('.main')
+      
+      animateElements.forEach((element) => {
+        const elementTop = referenceElement.getBoundingClientRect().bottom;
+        const windowHeight = window.innerHeight;
+        
+        if (elementTop < (windowHeight)) {
+          element.classList.add('nav-visible');
+          console.log(elementTop,windowHeight);
+        } else if(elementTop >90) {
+          element.classList.remove('nav-visible');
+        }
+      });
+    }
+    
+    window.addEventListener('scroll', animateOnScroll);
+    </script>
+  </body>
+</html>
